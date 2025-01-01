@@ -1,0 +1,31 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #222;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 900px;
+}
+
+.container {
+  border: 5px solid #fff;
+  width: 700px;
+  padding: 25px;
+}
+
+.essay-card {
+   background-color: #fff;
+   width: 400px;
+   padding: 25px;
+}
+
+.essay-heading{
+   background-color: deeppink;
+   width: fit-content;
+   padding: 15px;
+}
