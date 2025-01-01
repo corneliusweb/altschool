@@ -9,23 +9,36 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 900px;
+   height: 100vh;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  border: 5px solid #fff;
+  border: 12px solid #fff;
   width: 700px;
-  padding: 25px;
+  padding: 60px 50px 80px 50px;
+  border-bottom: 20px groove #fff;
 }
 
 .essay-card {
    background-color: #fff;
-   width: 400px;
-   padding: 25px;
+   width: 350px;
+   height: 230px;
+   padding: 30px;
+   border-radius: 8px;
+   position: relative;
 }
 
 .essay-heading{
    background-color: deeppink;
    width: fit-content;
-   padding: 15px;
+   padding: 15px 20px;
+   border-radius: 5px;
+   position: absolute;
+   top: -15px;
+   left: 48px;
+}
+
+.essay-card p {
+   margin-top: 45px;
 }
