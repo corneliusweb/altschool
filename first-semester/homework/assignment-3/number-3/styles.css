@@ -1,0 +1,16 @@
+@font-face {
+   font-family: "Lato";
+   src: url(/first-semester/homework/assets/fonts/Lato-Regular.ttf);
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Lato", sans-serif;
+}
