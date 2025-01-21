@@ -24,23 +24,42 @@ body {
       width: 550px;
       background-color: #fff;
       position: relative;
+      border-radius: 5px;
 
       & img {
          width: 100%;
          aspect-ratio: 1/.5;
-         object-fit: cover;
+         border-radius: 5px 5px 0 0;
       }
 
       & .alert {
          position: absolute;
          top: 7px;
          left: -10px;
-         color: #fff;
-         background-color: #000;
+         color: #000;
+         background-color: #eaea52;
+         font-weight: 900;
          padding: 8px 20px;
-         /* border-top-right-radius: 50px;
-         border-bottom-right-radius: 50px; */
          border-radius: 8px 50px 50px 8px;
+      }
+
+      .text {
+         padding:18px;
+
+         h2 {
+            margin-bottom: 18px;
+
+            span {
+               color: #777;
+               font-size: 19px;
+            }
+         }
+
+         p {
+            line-height: 1.25;
+            font-weight: 500;
+            font-size: 16.5px;
+         }
       }
    }
 }
