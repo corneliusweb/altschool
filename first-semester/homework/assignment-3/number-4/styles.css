@@ -1,0 +1,55 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: "Brown";
+   src: url(/first-semester/homework/assets/fonts/brown.woff2),
+      url(/first-semester/homework/assets/fonts/brown.woff);
+}
+
+body {
+   background-color: #F7FDFC;
+   width: 100%;
+   font-family: "Brown", sans-serif;
+}
+
+.container {
+   padding: 140px;
+   /* width: 100%; */
+   display: flex;
+   justify-content: space-between;
+}
+
+.container .left {
+   width: 460px;
+   height: 275px;
+
+   & .logo {
+      width: 77.33px;
+      height: 80px;
+
+      & img {
+         width: 100%;
+      }
+   }
+
+   & h1 {
+      margin: 24px 0;
+      font-size: 40px;
+      line-height: 50px;
+   }
+
+   & p {
+      color: #737373;
+      line-height: 25px;
+      font-size: 16px;
+   }
+}
+.container .right {
+   background-color: #fff;
+   width: 580px;
+   height: 679px;
+}
