@@ -41,7 +41,10 @@
                   </select>
                </label>
                <label for="dob"> Date of Birth
-                  <input type="date" id="dob" name="date of birth">
+                  <div>
+                     <input type="date" id="dob" name="date of birth">
+                     <div class="custom-placeholder">Select here</div>
+                  </div>
                </label>
             </div>
             <div>
@@ -55,12 +58,15 @@
 
             <label for="activity-level"> Activity Level
                <select name="activity-level" id="activity-level">
-                  <option value="Select here">Select here</option>
+                  <option value="Select here" disabled selected>Select here</option>
                </select>
             </label>
 
             <label for="password"> Password
-               <input type="password" id="password" name="password">
+               <div>
+                  <img src="/first-semester/homework/assets/show.png" alt="show password icon">
+                  <input type="password" id="password" name="password">
+               </div>
             </label>
 
             <input type="submit" value="Register">
