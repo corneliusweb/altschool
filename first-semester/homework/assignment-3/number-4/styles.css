@@ -46,6 +46,7 @@ body {
       margin: 24px 0;
       font-size: 40px;
       line-height: 50px;
+      color: #000B0A;
    }
 
    & p {
@@ -113,6 +114,7 @@ body {
 
          & input::-webkit-calendar-picker-indicator {
             opacity: 0;
+            width: 100%;
          }
 
          & input {
