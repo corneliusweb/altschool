@@ -11,8 +11,8 @@
 }
 
 body {
-   background-color: #F7FDFC;
    width: 100%;
+   background-color: #F7FDFC;
    font-family: "Brown", sans-serif;
 }
 
@@ -49,10 +49,10 @@ body {
 }
 
 .container .right {
-   background-color: #fff;
    width: 580px;
    height: 679px;
    padding: 24px;
+   background-color: #fff;
 
    & input,
    & select {
@@ -69,18 +69,18 @@ body {
 
    & input:focus,
    & select:focus {
-      border: 2px solid #2EC4B6;
       color: #000;
+      border: 2px solid #2EC4B6;
    }
 
-   & div {
+   & form > div {
       display: flex;
+      margin-bottom: 20px;
       justify-content: space-between;
-      margin-bottom: 10px;
    }
 
    & label[for="dob"] {
- 
+
       & div {
          position: relative;
          
@@ -102,12 +102,12 @@ body {
          }
 
          & .custom-placeholder {
-            position: absolute;
             top: 50%;
             left: 10px;
-            transform: translateY(-50%);
-            color: #737373;
             font-size: 14px;
+            color: #737373;
+            position: absolute;
+            transform: translateY(-50%);
          }
       }
 
@@ -130,11 +130,11 @@ body {
             width: 100%;
          }
 
-         img {
-            position: absolute;
+         & img {
             top: 50%;
+            right: 10px;
+            position: absolute;
             transform: translateY(-50%);
-            right: 3%;
          }
       }
    }
