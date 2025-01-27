@@ -115,6 +115,7 @@ body {
 
    & label[for="activity-level"] {
       display: block;
+      margin-bottom: 20px;
 
       & select {
          width: 100%;
@@ -141,5 +142,20 @@ body {
 
    & input[type="submit"] {
       width: 100%;
+      margin-top: 45px;
+      background-color: #2EC4B6;
+      color: #fff;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+   }
+
+   & > p {
+      margin-top: 25px;
+      font-size: 14px;
+
+      a {
+         color: #2EC4B6;
+      }
    }
 }
