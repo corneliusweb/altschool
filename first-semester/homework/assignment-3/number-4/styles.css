@@ -10,6 +10,12 @@
       url(/first-semester/homework/assets/fonts/brown.woff);
 }
 
+@font-face {
+   font-family: "sofia pro";
+   src: url(/first-semester/homework/assets/fonts/sofiapro.woff2),
+      url(/first-semester/homework/assets/fonts/sofiapro.woff);
+}
+
 body {
    width: 100%;
    background-color: #F7FDFC;
@@ -53,6 +59,11 @@ body {
    height: 679px;
    padding: 24px;
    background-color: #fff;
+   font-family: "sofia pro", sans-serif;
+
+   & label {
+      font-weight: 600;
+   }
 
    & input,
    & select {
@@ -62,8 +73,9 @@ body {
       padding: 10px;
       outline: none;
       color: #737373;
-      margin-top: 5px;
+      margin-top: 7px;
       border-radius: 2px;
+      border: 1px solid #000;
       font-family: "Brown", sans-serif;
    }
 
@@ -83,7 +95,7 @@ body {
 
       & div {
          position: relative;
-         
+
          & input::-webkit-datetime-edit-text,
          & input::-webkit-datetime-edit-month-field,
          & input::-webkit-datetime-edit-day-field,
@@ -94,7 +106,7 @@ body {
          & input::-webkit-calendar-picker-indicator {
             opacity: 0;
          }
-         
+
          & input {
             background-image: url(/first-semester/homework/assets/calendar-icon.png);
             background-repeat: no-repeat;
