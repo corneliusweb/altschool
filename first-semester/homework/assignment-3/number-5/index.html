@@ -24,69 +24,71 @@
    </header>
 
    <main>
-      <div class="left">
-         <h2>Checkout</h2>
-
-         <form>
-            <fieldset>
-               <legend>
-                  <span><img src="/first-semester/homework/assets/1-circle.svg" alt="num 1 icon"></span> Your Basic Information
-               </legend>
-               
-               <div>
-                  <label for="fname"> First Name
-                     <input type="text" id="fname" name="first name" placeholder="Jane">
-                  </label>
-                  <label for="lname"> Last Name
-                     <input type="text" id="lname" name="last name" placeholder="Doe">
-                  </label>
-               </div>
-               <label for="email"> E-mail
-                  <input type="email" id="email" name="email" placeholder="janedoe@example.com">
-               </label>
-            </fieldset>
-
-            <fieldset>
-               <legend>
-                  <span><img src="/first-semester/homework/assets/2-circle.svg" alt="num 2 icon"></span> Your Payment Information
-               </legend>
-               <label for="credit-card">Credit Card
+      <div class="container">
+         <div class="left">
+            <h2>Checkout</h2>
+         
+            <form>
+               <fieldset>
+                  <legend>
+                     <img src="/first-semester/homework/assets/1-circle.svg" alt="num 1 icon"> Your Basic Information
+                  </legend>
+         
                   <div>
-                     <input type="text" id="credit-card" name="credit-card">
-                     <div class="placeholder"><span>Card Number</span><span>MM/YY <span>CVC</span></span></div>
+                     <label for="fname"> First Name
+                        <input type="text" id="fname" name="first name" placeholder="Jane">
+                     </label>
+                     <label for="lname"> Last Name
+                        <input type="text" id="lname" name="last name" placeholder="Doe">
+                     </label>
                   </div>
-               </label>
-            </fieldset>
-            <input type="submit" value="Buy WP Pusher">
-         </form>
-         <p>
-            <span><img src="/first-semester/homework/assets/question-circle.svg" alt="question-circle"></span>
-            Need any help? Don't hesitate to <a href="">contact support</a>!
-         </p>
-         <p>powered by <span>stripe</span></p>
-      </div>
-
-      <div class="right">
-         <div>
-            <h2>Freelancer</h2>
-            <p class="price bold"><sup>$</sup> 99 <sub>/year</sub></p>
-            <p><em>Automatically renews after 1 year</em></p>
+                  <label for="email"> E-mail
+                     <input type="email" id="email" name="email" placeholder="janedoe@example.com">
+                  </label>
+               </fieldset>
+         
+               <fieldset>
+                  <legend>
+                     <img src="/first-semester/homework/assets/2-circle.svg" alt="num 2 icon"> Your Payment Information
+                  </legend>
+                  <label for="credit-card">Credit Card
+                     <div>
+                        <input type="text" id="credit-card" name="credit-card" placeholder="Card Number                                                                               MM/YY       CVC">
+                     </div>
+                  </label>
+               </fieldset>
+               <input type="submit" value="Buy WP Pusher">
+            </form>
+            <p class="support">
+              <img src="/first-semester/homework/assets/question-circle.svg" alt="question-circle">
+               Need any help? <span>Don't hesitate to <a href="">contact support</a>!</span>
+            </p>
+            <p><img src="/first-semester/homework/assets/powered_by_stripe.svg" alt="Stripe"></p>
          </div>
-         <div>
-            <p><span></span> Use on <span class="bold">5</span> client sites</p>
-            <p><span></span> Private repositories</p>
-            <p><span></span> Email support</p>
-
+         
+         <div class="right">
             <div>
-               <p>Need <span class="bold">20</span> clients sites?</p>
-               <a href="#fake">Switch to the Agency plan</a>
+               <h2>Freelancer</h2>
+               <p class="price bold"><sup>$</sup> 99 <sub>/year</sub></p>
+               <p><em>Automatically renews after 1 year</em></p>
             </div>
-         </div>
-         <div>
-            <p><i>FTP</i> is horrible to deal with. <span class="bold">WP Pusher</span> solves that issue, and the customer support is awesome!</p>
-
             <div>
-               <img src="/first-semester/homework/assets/kirk.png" alt="kirk's snapshot"> <span class="bold">Kirk Beard</span>
+               <p><span></span> Use on <span class="bold">5</span> client sites</p>
+               <p><span></span> Private repositories</p>
+               <p><span></span> Email support</p>
+         
+               <div>
+                  <p>Need <span class="bold">20</span> clients sites?</p>
+                  <a href="#fake">Switch to the Agency plan</a>
+               </div>
+            </div>
+            <div>
+               <p><i>FTP</i> is horrible to deal with. <span class="bold">WP Pusher</span> solves that issue, and the customer
+                  support is awesome!</p>
+         
+               <div>
+                  <img src="/first-semester/homework/assets/kirk.png" alt="kirk's snapshot"> <span class="bold">Kirk Beard</span>
+               </div>
             </div>
          </div>
       </div>
