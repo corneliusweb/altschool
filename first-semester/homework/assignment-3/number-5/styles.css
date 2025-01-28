@@ -73,15 +73,15 @@ main {
          font-weight: 400;
          border-bottom: 1px solid #E0E6EA;
          text-shadow: 0px 3.5px 4px #646E7A;
-         padding: 35px 0 35px 35px;
+         padding: 35px 0 50px 35px;
       }
 
-      fieldset {
+      & fieldset {
          padding: 0 35px;
          border: none;
          border-bottom: 1px solid #E0E6EA;
-         padding-bottom: 35px;
-         margin-top: 35px;
+         padding-bottom: 40px;
+         margin-top: 40px;
 
          & legend {
             font-size: 18px;
@@ -109,7 +109,7 @@ main {
                width: 227px;
             }
          }
-         
+
          & input {
             padding: 12px;
             display: block;
@@ -124,13 +124,54 @@ main {
             transform: scale(1.5);
          }
 
-         & label[for="credit-card"] {
-            position: relative;
+         & label[for="credit-card"] input {
+            width: 100%;
+         }
 
-            & input {
-               width: 100%;
-            }
+         & + input {
+            width: 510px;
+            display: block;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            margin-left: 35px;
+            padding: 15px;
+            border: none;
+            background-color: #038E7D;
+            border-radius: 5px;
+            color: #FFFFFF;
+            line-height: 21.6px;
+            letter-spacing: -0.4px;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
          }
       }
+
+      & .support {
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 16.8px;
+         text-align: center;
+
+         & span {
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: -0.01px;
+         }
+
+         & img {
+            transform: scale(1.35);
+            margin-right: 8px;
+         }
+
+         & + p {
+            text-align: center;
+            margin-top: 40px;
+         }
+      }
+   }
+
+   & .right {
+      width: 312px;
    }
 }
