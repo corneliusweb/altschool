@@ -226,7 +226,9 @@ body {
    .container .right {
       width: 100%;
       height: auto;
-      padding: 15px;
+      padding: unset;
+      box-shadow: unset;
+      background-color: #F7FDFC;
 
       & input,
       & select {
@@ -235,6 +237,17 @@ body {
 
       & form > div {
          flex-direction: column;
+         margin-bottom: unset;
+      }
+
+      & label {
+         margin-bottom: 15px;
+      }
+      
+      & form {
+         background-color: #fff;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         padding: 15px;
       }
    }
 }
