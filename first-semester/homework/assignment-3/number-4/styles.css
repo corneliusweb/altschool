@@ -5,7 +5,7 @@
 }
 
 @font-face {
-   font-family: "Brown";
+   font-family: "brown";
    src: url(/first-semester/homework/assets/fonts/brown.woff2),
       url(/first-semester/homework/assets/fonts/brown.woff);
 }
@@ -19,7 +19,7 @@
 body {
    width: 100%;
    background-color: #F7FDFC;
-   font-family: "Brown", sans-serif;
+   font-family: "brown", sans-serif;
 }
 
 .container {
@@ -85,7 +85,7 @@ body {
       border-radius: 2px;
       background-color: transparent;
       border: 1px solid rgba(0, 0, 0, 0.1);
-      font-family: "Brown", sans-serif;
+      font-family: "brown", sans-serif;
    }
 
    & input:focus,
@@ -174,13 +174,57 @@ body {
       cursor: pointer;
    }
 
-   & > p {
+   &>p {
       margin-top: 25px;
       font-size: 14px;
       text-align: center;
 
       a {
          color: #2EC4B6;
+      }
+   }
+}
+
+@media screen and (max-width:700px) {
+   .container {
+      flex-direction: column;
+      padding: 24px;
+   }
+
+   .container .left {
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 45px;
+
+      & .logo {
+         width: 33.67px;
+         height: 40px;
+      }
+
+      & h1 {
+         font-size: 30px;
+         line-height: 29.4px;
+         letter-spacing: -0.8px;
+      }
+
+      & p {
+         font-weight: 300;
+      }
+   }
+
+   .container .right {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+
+      & input,
+      & select {
+         width: 100%;
+      }
+
+      & form > div {
+         flex-direction: column;
       }
    }
 }
