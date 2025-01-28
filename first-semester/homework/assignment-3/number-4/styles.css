@@ -54,6 +54,10 @@ body {
       line-height: 25px;
       font-size: 16px;
    }
+
+   & p + p {
+      display: none;
+   }
 }
 
 .container .right {
@@ -208,8 +212,13 @@ body {
          letter-spacing: -0.8px;
       }
 
-      & p {
+      & > p {
+         display: none;
+      }
+
+      & p + p {
          font-weight: 300;
+         display: block;
       }
    }
 
