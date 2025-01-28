@@ -8,5 +8,67 @@
 </head>
 <body>
    
+   <header>
+      <div class="logo">
+         <img src="/first-semester/homework/assets/wp-pusher.png" alt="Wp Pusher logo">
+      </div>
+      <nav>
+         <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Learn more</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Account</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main>
+      <div class="left">
+         <h2>Checkout</h2>
+
+         <form>
+            <fieldset>
+               <legend>
+                  <span>1</span> Your Basic Information
+               </legend>
+               
+               <div>
+                  <label for="fname"> First Name
+                     <input type="text" id="fname" name="first name" placeholder="Jane">
+                  </label>
+                  <label for="lname"> Last Name
+                     <input type="text" id="lname" name="last name" placeholder="Doe">
+                  </label>
+               </div>
+               <label for="email"> E-mail
+                  <input type="email" id="email" name="email" placeholder="janedoe@example.com">
+               </label>
+            </fieldset>
+
+            <fieldset>
+               <legend>
+                  <span>2</span> Your Payment Information
+               </legend>
+               <label for="credit-card">Credit Card
+                  <div>
+                     <input type="text" id="credit-card" name="credit-card">
+                     <div class="placeholder"><span>Card Number</span><span>MM/YY <span>CVC</span></span></div>
+                  </div>
+               </label>
+            </fieldset>
+            <input type="submit" value="Buy WP Pusher">
+         </form>
+         <p>Need any help? Don't hesitate to <a href="">contact support</a>!</p>
+         <p>powered by <span>stripe</span></p>
+      </div>
+      <div class="right"></div>
+   </main>
+
+   <footer>
+      <p>&copy; 2018 WP Pusher IVS</p>
+      <a href="#fake">Terms of Service</a>
+   </footer>
+
 </body>
 </html>
