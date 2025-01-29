@@ -61,6 +61,7 @@ main {
       width: 892px;
       height: 845px;
       display: flex;
+      box-shadow: 0 0 20px #f1e9e9;
    }
 
    & .left {
@@ -176,6 +177,7 @@ main {
       background-color: #1179BF;
       padding: 45px;
       color: #fff;
+      border-radius: 0 6px 6px 0;
 
       & div:first-child {
          margin-bottom: 40px;
