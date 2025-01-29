@@ -173,5 +173,108 @@ main {
 
    & .right {
       width: 312px;
+      background-color: #1179BF;
+      padding: 45px;
+      color: #fff;
+
+      & div:first-child {
+         margin-bottom: 40px;
+
+         & h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+         }
+
+         & p.price {
+            line-height: 72px;
+            font-weight: 300;
+            font-size: 60px;
+            letter-spacing: -0.01px;
+            margin-bottom: 8px;
+            
+            & sup {
+               font-weight: 700;
+               font-size: 24px;
+               line-height: 28.8px;
+               letter-spacing: -0.01px;
+            }
+
+            & sub {
+               font-weight: 700;
+               font-size: 18px;
+               line-height: 21.6px;
+               letter-spacing: -0.01px;
+            }
+
+            & + p {
+               font-size: 16px;
+               font-weight: 400;
+               line-height: 24px;
+               letter-spacing: -0.01px;
+            }
+         }
+      }
+
+      & div:nth-child(2) {
+         padding-bottom: 45px;
+         border-bottom: 2px solid #ffffff33;
+
+         & p {
+            margin-bottom: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.01px;
+
+            & + div {
+               margin-top: 40px;
+
+               & a {
+                  color: #fff;
+                  text-decoration-thickness: 3px;
+                  text-decoration-color: #b9f5ff81;
+                  text-underline-offset: 2px;
+                  font-weight: 700;
+                  font-size: 16px;
+                  line-height: 19.2px;
+                  letter-spacing: -0.01px;
+               }
+            }
+
+            & img {
+               margin-right: 10px;
+               transform: scale(1.1);
+            }
+         }
+      }
+
+      & .bold {
+         font-weight: 700;
+      }
+
+      & div:last-child {
+         margin-top: 45px;
+         border-bottom: unset;
+
+         & > p {
+            font-weight: 400;
+            font-size: 17.5px;
+            line-height: 24px;
+            letter-spacing: -0.01px;
+         }
+
+         & div {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+
+            & img {
+               width: 40px;
+               height: 40px;
+               border-radius: 50%;
+               margin-right: 10px;
+            }
+         }
+      }
    }
 }
