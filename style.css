@@ -65,6 +65,12 @@ body {
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: border .5s;
+         }
+
+         & a:not(.dropdown-content a, .dropdown > a):hover {
+            border: 1px solid #00ff00;
+            border-radius: 6px;
          }
          
          &.dropdown {
@@ -73,6 +79,7 @@ body {
 
             & > a {
                display: inline-block;
+               padding: 14px 16px 14px 0;
             }
 
             & .dropdown-content {
@@ -88,6 +95,16 @@ body {
          
          &.dropdown:hover .dropdown-content {
             display: block;
+         }
+
+         &.dropdown::before {
+            content: "";
+            display: inline-block;
+            background-image: url(/first-semester/homework/assets/caret-down-fill.svg);
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            background-position: 3px 4.4px;
          }
       }
    }
