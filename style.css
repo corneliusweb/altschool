@@ -20,10 +20,6 @@ body {
    background-color: #1a1a1a;
    border: 1px solid #333;
    padding: 20px;
-   overflow: hidden;
-   height: auto;
-   transition: max-height 2.5s ease-out;
-   max-height: 400px;
 
    & div {
       margin-left: 120px;
@@ -88,13 +84,16 @@ body {
 
             & .dropdown-content {
                display: none;
-               position: relative;
-               margin-left: -1px;
+               position: absolute;
+               margin-left: 0;
                background-color: #333;
                min-width: 150px;
                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                z-index: 1;
-               animation-name: show;
+
+               & a:hover {
+                  background-color: #1a1a1a;
+               }
             }
          }
          
@@ -113,9 +112,4 @@ body {
          }
       }
    }
-}
-
-& .container:hover {
-   max-height: 700px;
-   overflow: visible;
 }
