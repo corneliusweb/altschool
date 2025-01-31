@@ -6,14 +6,14 @@
 
 @font-face {
    font-family: "brown";
-   src: url(/first-semester/homework/assets/fonts/brown.woff2),
-      url(/first-semester/homework/assets/fonts/brown.woff);
+   src: url(./assets/brown.woff2),
+      url(./assets/brown.woff);
 }
 
 @font-face {
    font-family: "sofia pro";
-   src: url(/first-semester/homework/assets/fonts/sofiapro.woff2),
-      url(/first-semester/homework/assets/fonts/sofiapro.woff);
+   src: url(./assets/sofiapro.woff2),
+      url(./assets/sofiapro.woff);
 }
 
 body {
