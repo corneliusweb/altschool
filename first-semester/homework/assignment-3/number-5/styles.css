@@ -6,8 +6,8 @@
 
 @font-face {
    font-family: "lato";
-   src: url(/first-semester/homework/assets/fonts/lato-regular.woff2),
-      url(/first-semester/homework/assets/fonts/lato-regular.woff);
+   src: url(./assets/lato-regular.woff2),
+      url(./assets/lato-regular.woff);
 }
 
 body {
