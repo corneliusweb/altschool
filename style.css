@@ -20,6 +20,10 @@ body {
    background-color: #1a1a1a;
    border: 1px solid #333;
    padding: 20px;
+   overflow: hidden;
+   height: auto;
+   transition: max-height 2.5s ease-out;
+   max-height: 400px;
 
    & div {
       margin-left: 120px;
@@ -72,24 +76,25 @@ body {
             border: 1px solid #00ff00;
             border-radius: 6px;
          }
-         
+
          &.dropdown {
             position: relative;
             display: inline-block;
 
-            & > a {
+            &>a {
                display: inline-block;
                padding: 14px 16px 14px 0;
             }
 
             & .dropdown-content {
                display: none;
-               position: absolute;
-               right: 0;
+               position: relative;
+               margin-left: -1px;
                background-color: #333;
                min-width: 150px;
                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                z-index: 1;
+               animation-name: show;
             }
          }
          
@@ -108,4 +113,9 @@ body {
          }
       }
    }
+}
+
+& .container:hover {
+   max-height: 700px;
+   overflow: visible;
 }
