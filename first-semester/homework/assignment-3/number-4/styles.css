@@ -122,7 +122,7 @@ body {
          }
 
          & input {
-            background-image: url(/first-semester/homework/assets/calendar-icon.png);
+            background-image: url(./assets/calendar-icon.png);
             background-repeat: no-repeat;
             background-position: 95%;
          }
