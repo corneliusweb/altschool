@@ -1,0 +1,35 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+@font-face {
+   font-family: "gilroy bold";
+   src: url(./assets/fonts/gilroy-bold.woff2),
+      url(./assets/fonts/gilroy-bold.woff);
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "gilroy medium";
+   src: url(./assets/fonts/gilroy-medium.woff2),
+      url(./assets/fonts/gilroy-medium.woff);
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "gilroy semibold";
+   src: url(./assets/fonts/gilroy-semibold.woff2),
+   url(./assets/fonts/gilroy-semibold.woff);
+}
+
+:root {
+   --page-blue: #0065FE;
+   --secondary-blue: #005AE2;
+   --page-black: #141414;
+   --footer-black: #112232;
+   --secondary-bg: #1E3448;
+}
