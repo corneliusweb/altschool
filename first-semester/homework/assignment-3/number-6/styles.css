@@ -119,10 +119,24 @@ section.hero {
       font-size: 40px;
       line-height: 48px;
       letter-spacing: 1px;
+      position: relative;
+      font-weight: 500;
 
       & span {
          color: var(--secondary-blue);
       }
+
+   }
+
+   & h2.section-heading:not(.stats-h2)::before {
+      content: "";
+      background-image: url(./assets/icons/border-line.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: -20px;
+      width: 10px;
+      height: 48px;
    }
 
    & section#cta {
@@ -138,9 +152,24 @@ section.hero {
             line-height: 96px;
             font-size: 48px;
             text-align: center;
+            font-weight: 500;
 
             & span {
                color: var(--secondary-blue);
+               position: relative;
+
+               &::after {
+                  content: "";
+                  background-image: url(./assets/icons/undeline.svg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 173.63px;
+                  height: 19.91px;
+                  position: absolute;
+                  left: 50%;
+                  top: 105%;
+                  transform: translate(-50%,-50%);
+               }
             }
          }
 
@@ -529,6 +558,19 @@ section#faq {
       font-weight: 500;
       font-family: var(--gilroy-bold);
       margin-bottom: 43px;
+      position: relative;
+
+      &::before {
+         content: "";
+         background-image: url(./assets/icons/border-line.svg);
+         background-repeat: no-repeat;
+         background-position: center;
+         position: absolute;
+         left: 325px;
+         top: -7px;
+         width: 10px;
+         height: 48px;
+      }
    }
 
    & details {
