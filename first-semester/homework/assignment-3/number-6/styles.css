@@ -366,13 +366,107 @@ section.hero {
                font-family: var(--gilroy-semibold);
                line-height: 12px;
             }
-            
+
             & a:first-child {
                border: 1px solid var(--secondary-blue);
                padding: 10px 20px;
                border-radius: 100px;
                margin-right: 12px;
             }
+         }
+      }
+   }
+}
+
+section.trim {
+   height: 522px;
+   width: 100%;
+   display: grid;
+   place-items: center;
+   /* background-color: antiquewhite; */
+   --trim-url-blue: #3284FF;
+   --fadeout-trim-url-blue: #4991FF;
+   background-image: url(./assets/img/form-bg.svg);
+
+   & div.trim-box {
+      width: 476px;
+      height: 355px;
+      border-radius: 12px;
+      background-color: #fff;
+      padding: 42px;
+
+      & form input:first-child {
+         width: 100%;
+         margin-bottom: 24px;
+      }
+
+      & input,
+      & select {
+         padding: 16px;
+         border-radius: 12px;
+         font-size: 12px;
+         line-height: 18px;
+         color: var(--trim-url-blue);
+         border: 1px solid var(--trim-url-blue);
+         font-family: var(--gilroy-medium);
+      }
+
+      & input:focus,
+      & select:focus {
+         outline: 1px solid var(--fadeout-trim-url-blue);
+      }
+      
+      & input::placeholder {
+         color: var(--trim-url-blue);
+      }
+
+      & div {
+         display: flex;
+         justify-content: space-between;
+         gap: 16px;
+
+         & select {
+            width: calc(50% - 8px);
+            background-color: transparent;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url(./assets/icons/dropdown-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+         }
+
+         & input {
+            width: calc(50% - 8px);
+         }
+      }
+
+      & button {
+         border: none;
+         background-color: var(--secondary-blue);
+         width: 100%;
+         padding: 16px;
+         color: #fff;
+         border-radius: 100px;
+         font-size: 14px;
+         line-height: 12px;
+         font-family: var(--gilroy-semibold);
+         margin: 24px 0 12px;
+         cursor: pointer;
+      }
+
+      & p {
+         width: 373px;
+         font-family: var(--gilroy-medium);
+         font-size: 14px;
+         line-height: 20px;
+         color: var(--fadeout-trim-url-blue);
+         padding: 10px;
+
+         & a {
+            padding: unset;
+            color: var(--trim-url-blue);
+            font-family: var(--gilroy-bold);
          }
       }
    }
