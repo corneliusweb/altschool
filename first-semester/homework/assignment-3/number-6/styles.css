@@ -316,12 +316,25 @@ section.hero {
             width: 379px;
             border: 1px solid var(--secondary-blue);
             border-radius: 12px 0 0 12px;
-            padding: 30px 60px;
+            padding: 30px 50px;
             border-right: none;
 
             & li {
                list-style-type: none;
                margin-bottom: 20px;
+               position: relative;
+               margin-left: 30px;
+
+               &::before {
+                  content: "";
+                  background-image: url(./assets/icons/check-circle.svg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 16px;
+                  height: 16px;
+                  position: absolute;
+                  left: -30px;
+               }
             }
          }
 
@@ -342,6 +355,19 @@ section.hero {
             & li {
                list-style-type: none;
                margin-bottom: 20px;
+               position: relative;
+               margin-left: 30px;
+
+               &::before {
+                  content: "";
+                  background-image: url(./assets/icons/check-circle-white.svg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  width: 16px;
+                  height: 16px;
+                  position: absolute;
+                  left: -30px;
+               }
             }
          }
 
