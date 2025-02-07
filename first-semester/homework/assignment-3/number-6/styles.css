@@ -37,6 +37,8 @@
 body {
    font-family: "gilroy medium", sans-serif;
    color: var(--page-black);
+   width: 1440px;
+   margin: auto;
 }
 
 header {
@@ -143,6 +145,64 @@ section.hero {
 
                &:first-child {
                   width: 125px;
+               }
+            }
+         }
+      }
+
+      & .diagrams {
+         width: 100%;
+
+         & div.hero-vector-box {
+            display: flex;
+            flex-direction: column;
+
+            & img:first-child {
+               width: 833px;
+               height: 224px;
+               margin: auto;
+
+               & + img {
+                  width: 1440px;
+                  height: 93px;
+               }
+            }
+         }
+
+         & div.stats {
+            height: 220px;
+            background-color: #F9FBFD;
+            display: flex;
+            gap: 120px;
+            align-items: center;
+            justify-content: center;
+
+            & h2 {
+               width: 337px;
+               font-family: "gilroy bold", sans-serif;
+               font-size: 40px;
+               line-height: 48px;
+               letter-spacing: 1px;
+
+               & span {
+                  color: var(--secondary-blue);
+               }
+            }
+
+            & div {
+               display: flex;
+               width: 709px;
+               height: 100px;
+               gap: 72px;
+
+               & p {
+
+                  & span {
+                     display: block;
+                     font-family: "gilroy semibold", sans-serif;
+                     font-size: 32px;
+                     line-height: 40px;
+                  }
                }
             }
          }
