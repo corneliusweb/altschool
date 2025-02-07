@@ -108,7 +108,11 @@ body {
             background-repeat: no-repeat;
             width: 20px;
             height: 20px;
-            background-position: 3px 4.4px;
+            background-position: center;
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
          }
       }
    }
