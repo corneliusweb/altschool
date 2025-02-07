@@ -35,7 +35,8 @@
 }
 
 body {
-   font-family: "gilroy medium";
+   font-family: "gilroy medium", sans-serif;
+   color: var(--page-black);
 }
 
 header {
@@ -64,7 +65,7 @@ header {
       }
    }
 
-   & .cta {
+   & div {
       & a {
          text-decoration: none;
          padding: 12px 22px;
@@ -75,6 +76,75 @@ header {
             background-color: var(--page-blue);
             color: #fff;
             border-radius: 50px;
+         }
+      }
+   }
+}
+
+main {
+   & a {
+      text-decoration: none;
+      padding: 12px 30px;
+      color: var(--page-blue);
+      border: none;
+      text-align: center;
+      font-size: 16px;
+   }
+
+   & a.blue-bg {
+      background-color: var(--page-blue);
+      color: #fff;
+      border-radius: 50px;
+   }
+}
+
+section.hero {
+
+   & section.cta {
+
+      & .main-content {
+         width: 948px;
+         height: 389px;
+         margin: auto;
+         margin-bottom: 100px;
+
+         & h1 {
+            font-family: "gilroy bold", sans-serif;
+            line-height: 96px;
+            font-size: 48px;
+            text-align: center;
+
+            & span {
+               color: var(--secondary-blue);
+            }
+         }
+
+         & p {
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: center;
+            width: 781px;
+         }
+
+         & div {
+            width: 282px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 60px auto 0 auto;
+
+            & a {
+               line-height: 12px;
+               border-radius: 100px;
+               padding: 12px 20px;
+
+               &:first-child {
+                  width: 125px;
+               }
+            }
          }
       }
    }
