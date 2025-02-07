@@ -31,6 +31,7 @@
    --secondary-blue: #005AE2;
    --page-black: #141414;
    --footer-black: #112232;
+   --footer-heading-black: #071827;
    --secondary-bg: #1E3448;
 
    --gilroy-bold: "gilroy bold", sans-serif;
@@ -63,6 +64,8 @@ header {
             text-decoration: none;
             padding: 12px 24px;
             color: var(--page-black);
+            line-height: 21.09px;
+            font-size: 18px;
          }
 
          &:first-child a {
@@ -500,6 +503,114 @@ section#faq {
             font-size: 16px;
             line-height: 32px;
          }
+      }
+   }
+}
+
+footer {
+   margin-bottom: 15px;
+
+   & div.cta {
+      height: 299px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      background-color: #1E3448;
+      margin: 150px 0 80px;
+
+      & h2 {
+         font-size: 40px;
+         line-height: 48px;
+         font-family: var(--gilroy-bold);
+         font-weight: 500;
+      }
+
+      & a {
+         padding: 16px;
+         width: 200px;
+         background-color: var(--secondary-blue);
+         color: #fff;
+         border-radius: 100px;
+         text-align: center;
+         text-decoration: none;
+         margin-top: 25px;
+         font-family: var(--gilroy-semibold);
+         line-height: 12px;
+      }
+   }
+
+   & div.nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 203px;
+      
+      & .left {
+         width: 184px;
+         height: 96px;
+         flex-shrink: 0;
+         margin-right: 100px;
+
+         & div {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+         }
+      }
+
+      & .right {
+         width: 812px;
+         height: 450px;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 56px;
+
+         & a {
+            color: var(--footer-black);
+            text-decoration: none;
+            display: block;
+            line-height: 24px;
+            padding: 1.5px 0;
+         }
+      }
+
+      & section {
+
+         & h3 {
+            color: var(--footer-heading-black);
+            font-family: var(--gilroy-bold);
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 10px;
+         }
+
+         & li {
+            list-style-type: none;
+         }
+
+         &:nth-child(5),
+         &:nth-child(6),
+         &:nth-child(7) {
+            margin-top: -56px;
+         }
+      }
+   }
+
+   & p {
+      text-align: right;
+      font-size: 14px;
+      line-height: 20px;
+
+      & a {
+         color: var(--footer-black);
+         text-decoration: none;
+      }
+
+      & span::before {
+         content: "| ";
+         margin: 0 7px;
       }
    }
 }
