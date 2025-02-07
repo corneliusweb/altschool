@@ -297,6 +297,7 @@ section.hero {
                font-size: 32px;
                line-height: 28px;
                margin: 30px 0 18px 0;
+               font-weight: 400;
             }
 
             & p {
@@ -684,7 +685,7 @@ footer {
             font-family: var(--gilroy-bold);
             font-size: 16px;
             line-height: 24px;
-            font-weight: 500;
+            font-weight: 400;
             margin-bottom: 10px;
          }
 
