@@ -417,7 +417,6 @@ section#trim {
    display: grid;
    place-items: center;
    margin-bottom: 50px;
-   /* background-color: antiquewhite; */
    background-image: url(./assets/img/form-bg.svg);
    --trim-url-blue: #3284FF;
    --fadeout-trim-url-blue: #4991FF;
@@ -487,6 +486,20 @@ section#trim {
          font-family: var(--gilroy-semibold);
          margin: 24px 0 12px;
          cursor: pointer;
+         position: relative;
+
+         &::after {
+            content: "";
+            background-image: url(./assets/icons/magic-wand.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 34.5%;
+            width: 24px;
+            height: 24px;
+         }
       }
 
       & p {
