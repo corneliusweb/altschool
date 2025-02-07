@@ -44,6 +44,10 @@ body {
    color: var(--page-black);
    width: 1440px;
    margin: auto;
+   background-image: url(./assets/img/aurora.svg);
+   background-repeat: no-repeat;
+   backdrop-filter: blur(20px);
+   background-position: 0 0;
 }
 
 header {
@@ -497,12 +501,29 @@ section#faq {
          margin-bottom: 15px;
          font-size: 20px;
          line-height: 32px;
-         width: 744px;
+         position: relative;
 
          & p {
             font-size: 16px;
             line-height: 32px;
          }
+
+         &::after {
+            content: "";
+            background-image: url(./assets/icons/plus.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: 0;
+            transition: transform 1s;
+         }
+      }
+
+      &[open] summary::after {
+         background-image: url(./assets/icons/minus.svg);
+         transform: rotate(180deg);
       }
    }
 }
@@ -545,7 +566,7 @@ footer {
       display: flex;
       justify-content: space-between;
       padding: 0 203px;
-      
+
       & .left {
          width: 184px;
          height: 96px;
