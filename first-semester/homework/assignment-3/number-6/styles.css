@@ -32,10 +32,14 @@
    --page-black: #141414;
    --footer-black: #112232;
    --secondary-bg: #1E3448;
+
+   --gilroy-bold: "gilroy bold", sans-serif;
+   --gilroy-medium: "gilroy medium", sans-serif;
+   --gilroy-semibold: "gilroy semibold", sans-serif;
 }
 
 body {
-   font-family: "gilroy medium", sans-serif;
+   font-family: var(--gilroy-medium);
    color: var(--page-black);
    width: 1440px;
    margin: auto;
@@ -98,9 +102,20 @@ main {
       color: #fff;
       border-radius: 50px;
    }
+
 }
 
 section.hero {
+   & h2.section-heading {
+      font-family: var(--gilroy-bold);
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 1px;
+
+      & span {
+         color: var(--secondary-blue);
+      }
+   }
 
    & section.cta {
 
@@ -111,7 +126,7 @@ section.hero {
          margin-bottom: 100px;
 
          & h1 {
-            font-family: "gilroy bold", sans-serif;
+            font-family: var(--gilroy-bold);
             line-height: 96px;
             font-size: 48px;
             text-align: center;
@@ -162,7 +177,7 @@ section.hero {
                height: 224px;
                margin: auto;
 
-               & + img {
+               &+img {
                   width: 1440px;
                   height: 93px;
                }
@@ -179,14 +194,6 @@ section.hero {
 
             & h2 {
                width: 337px;
-               font-family: "gilroy bold", sans-serif;
-               font-size: 40px;
-               line-height: 48px;
-               letter-spacing: 1px;
-
-               & span {
-                  color: var(--secondary-blue);
-               }
             }
 
             & div {
@@ -199,7 +206,7 @@ section.hero {
 
                   & span {
                      display: block;
-                     font-family: "gilroy semibold", sans-serif;
+                     font-family: var(--gilroy-semibold);
                      font-size: 32px;
                      line-height: 40px;
                   }
@@ -224,7 +231,7 @@ section.hero {
          flex-shrink: 0;
 
          & h2 {
-            font-family: "gilroy bold", sans-serif;
+            font-family: var(--gilroy-bold);
             font-size: 40px;
             line-height: 32px;
             margin-bottom: 25px;
@@ -235,7 +242,7 @@ section.hero {
          }
 
          & p {
-            font-family: "gilroy medium";
+            font-family: var(--gilroy-medium);
             line-height: 28px;
             width: 370px;
             margin: auto;
@@ -253,16 +260,105 @@ section.hero {
             width: 340px;
 
             & h3 {
-               font-family: "gilroy semibold", sans-serif;
+               font-family: var(--gilroy-semibold);
                font-size: 32px;
                line-height: 28px;
                margin: 30px 0 18px 0;
             }
 
             & p {
-               font-family: "gilroy medium", sans-serif;
+               font-family: var(--gilroy-medium);
                line-height: 24px;
                font-size: 16px;
+            }
+         }
+      }
+   }
+
+   section.pricing {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* margin: 50px; */
+
+      & div.heading {
+         margin-bottom: 50px;
+         width: 576.1px;
+
+         & h2 {
+            line-height: 48px;
+            font-size: 38px;
+            margin-bottom: 15px;
+         }
+
+         & p {
+            width: 556px;
+            line-height: 24px;
+            text-align: center;
+         }
+      }
+
+      & div.plans {
+         display: flex;
+         width: 1088px;
+         height: 627px;
+         align-items: center;
+         justify-content: center;
+
+         & div.basic,
+         & div.teams {
+            height: 455px;
+            width: 379px;
+            border: 1px solid var(--secondary-blue);
+            border-radius: 12px 0 0 12px;
+            padding: 30px 60px;
+            border-right: none;
+
+            & li {
+               list-style-type: none;
+               margin-bottom: 20px;
+            }
+         }
+
+         & div.teams {
+            border-radius: 0 12px 12px 0;
+            border-left: none;
+            border-right: 1px solid var(--secondary-blue);
+         }
+
+         & div.professional {
+            width: 410px;
+            height: 627px;
+            background-color: var(--secondary-bg);
+            color: #fff;
+            border-radius: 12px;
+            padding: 30px 60px;
+
+            & li {
+               list-style-type: none;
+               margin-bottom: 20px;
+            }
+         }
+
+         & h3 {
+            font-family: var(--gilroy-medium);
+            line-height: 32px;
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 30px;
+         }
+
+         & p.price {
+            font-size: 40px;
+            line-height: 48px;
+            font-family: var(--gilroy-bold);
+
+            &+p {
+               font-size: 20px;
+               line-height: 32px;
+               font-family: var(--gilroy-medium);
+               margin: 20px 0 35px;
             }
          }
       }
