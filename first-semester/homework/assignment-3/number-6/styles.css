@@ -118,7 +118,7 @@ section.hero {
       }
    }
 
-   & section.cta {
+   & section#cta {
 
       & .main-content {
          width: 948px;
@@ -213,7 +213,7 @@ section.hero {
       }
    }
 
-   & section.why-scissors {
+   & section#why-scissors {
       display: flex;
       width: 1202.1px;
       height: 504px;
@@ -272,7 +272,7 @@ section.hero {
       }
    }
 
-   section.pricing {
+   section#pricing {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -378,15 +378,16 @@ section.hero {
    }
 }
 
-section.trim {
+section#trim {
    height: 522px;
    width: 100%;
    display: grid;
    place-items: center;
+   margin-bottom: 50px;
    /* background-color: antiquewhite; */
+   background-image: url(./assets/img/form-bg.svg);
    --trim-url-blue: #3284FF;
    --fadeout-trim-url-blue: #4991FF;
-   background-image: url(./assets/img/form-bg.svg);
 
    & div.trim-box {
       width: 476px;
@@ -415,7 +416,7 @@ section.trim {
       & select:focus {
          outline: 1px solid var(--fadeout-trim-url-blue);
       }
-      
+
       & input::placeholder {
          color: var(--trim-url-blue);
       }
@@ -457,7 +458,6 @@ section.trim {
 
       & p {
          width: 373px;
-         font-family: var(--gilroy-medium);
          font-size: 14px;
          line-height: 20px;
          color: var(--fadeout-trim-url-blue);
@@ -467,6 +467,38 @@ section.trim {
             padding: unset;
             color: var(--trim-url-blue);
             font-family: var(--gilroy-bold);
+         }
+      }
+   }
+}
+
+section#faq {
+   width: 792px;
+   margin: auto;
+
+   & h2 {
+      text-align: center;
+      font-size: 40px;
+      line-height: 32px;
+      font-weight: 500;
+      font-family: var(--gilroy-bold);
+      margin-bottom: 43px;
+   }
+
+   & details {
+      border-bottom: 1px solid #D6D6D6;
+      margin-bottom: 30px;
+
+      & summary {
+         list-style: none;
+         margin-bottom: 15px;
+         font-size: 20px;
+         line-height: 32px;
+         width: 744px;
+
+         & p {
+            font-size: 16px;
+            line-height: 32px;
          }
       }
    }
