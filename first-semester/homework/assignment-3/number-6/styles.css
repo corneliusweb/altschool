@@ -23,7 +23,7 @@
 @font-face {
    font-family: "gilroy semibold";
    src: url(./assets/fonts/gilroy-semibold.woff2),
-   url(./assets/fonts/gilroy-semibold.woff);
+      url(./assets/fonts/gilroy-semibold.woff);
 }
 
 :root {
@@ -32,4 +32,50 @@
    --page-black: #141414;
    --footer-black: #112232;
    --secondary-bg: #1E3448;
+}
+
+body {
+   font-family: "gilroy medium";
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 145.09px;
+   margin-bottom: 100px;
+
+   & ul {
+      list-style-type: none;
+      display: flex;
+
+      & li {
+
+         & a {
+            display: block;
+            text-decoration: none;
+            padding: 12px 24px;
+            color: var(--page-black);
+         }
+
+         &:first-child a {
+            color: var(--page-blue);
+         }
+      }
+   }
+
+   & .cta {
+      & a {
+         text-decoration: none;
+         padding: 12px 22px;
+         color: var(--page-blue);
+         border: none;
+
+         &:last-child {
+            background-color: var(--page-blue);
+            color: #fff;
+            border-radius: 50px;
+         }
+      }
+   }
 }
