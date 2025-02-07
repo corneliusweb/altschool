@@ -208,4 +208,38 @@ section.hero {
          }
       }
    }
+
+   & section.why-scissors {
+      display: flex;
+      width: 1202.1px;
+      height: 504px;
+      margin: auto;
+      margin-top: 148px;
+      margin-bottom: 148px;
+      gap: 96px;
+
+      & .left {
+         width: 398.1px;
+         height: 256px;
+         flex-shrink: 0;
+
+         & h2 {
+            font-family: "gilroy bold", sans-serif;
+            font-size: 40px;
+            line-height: 32px;
+            margin-bottom: 25px;
+
+            & span {
+               color: var(--secondary-blue);
+            }
+         }
+
+         & p {
+            font-family: "gilroy medium";
+            line-height: 28px;
+            width: 370px;
+            margin: auto;
+         }
+      }
+   }
 }
