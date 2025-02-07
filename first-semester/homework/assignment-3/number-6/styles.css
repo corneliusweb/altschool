@@ -91,6 +91,7 @@ main {
    & a {
       text-decoration: none;
       padding: 12px 30px;
+      max-width: 200px;
       color: var(--page-blue);
       border: none;
       text-align: center;
@@ -100,7 +101,7 @@ main {
    & a.blue-bg {
       background-color: var(--page-blue);
       color: #fff;
-      border-radius: 50px;
+      border-radius: 100px;
    }
 
 }
@@ -156,7 +157,6 @@ section.hero {
             & a {
                line-height: 12px;
                border-radius: 100px;
-               padding: 12px 20px;
 
                &:first-child {
                   width: 125px;
@@ -202,14 +202,11 @@ section.hero {
                height: 100px;
                gap: 72px;
 
-               & p {
-
-                  & span {
-                     display: block;
-                     font-family: var(--gilroy-semibold);
-                     font-size: 32px;
-                     line-height: 40px;
-                  }
+               & p span {
+                  display: block;
+                  font-family: var(--gilroy-semibold);
+                  font-size: 32px;
+                  line-height: 40px;
                }
             }
          }
@@ -280,10 +277,10 @@ section.hero {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      /* margin: 50px; */
+      margin-bottom: 100px;
 
       & div.heading {
-         margin-bottom: 50px;
+         margin-bottom: 70px;
          width: 576.1px;
 
          & h2 {
@@ -359,6 +356,22 @@ section.hero {
                line-height: 32px;
                font-family: var(--gilroy-medium);
                margin: 20px 0 35px;
+            }
+         }
+
+         &+div {
+            margin-top: 70px;
+
+            & a {
+               font-family: var(--gilroy-semibold);
+               line-height: 12px;
+            }
+            
+            & a:first-child {
+               border: 1px solid var(--secondary-blue);
+               padding: 10px 20px;
+               border-radius: 100px;
+               margin-right: 12px;
             }
          }
       }
