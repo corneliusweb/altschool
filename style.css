@@ -21,7 +21,7 @@ body {
    border: 1px solid #333;
    padding: 20px;
 
-   & div {
+   & > div {
       margin-left: 120px;
 
       & h1 {
@@ -62,32 +62,46 @@ body {
          & a {
             display: block;
             color: #00aaff;
-            text-align: center;
+            text-align: left;
             padding: 14px 16px;
             text-decoration: none;
             transition: border .5s;
          }
 
-         & a:not(.dropdown-content a, .dropdown > a):hover {
+         & a:not(.dropdown-content a):hover,
+         div:first-child:hover {
             border: 1px solid #00ff00;
             border-radius: 6px;
          }
 
          &.dropdown {
             position: relative;
-            display: inline-block;
 
-            &>a {
-               display: inline-block;
-               padding: 14px 16px 14px 0;
+            & .dropdown-btn{
+               padding: 14px 16px 14px 40px;
+               position: relative;
+               color: #00aaff;
+
+               & span::after {
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  background-image: url(./first-semester/homework/assets/caret-down-fill.svg);
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  position: absolute;
+                  left: 12px;
+                  top: 50%;
+                  transform: translateY(-50%);
+               }
             }
 
             & .dropdown-content {
                display: none;
+               min-width: fit-content;
+               width: 100%;
                position: absolute;
-               margin-left: 0;
                background-color: #333;
-               min-width: 150px;
                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                z-index: 1;
 
@@ -99,20 +113,6 @@ body {
          
          &.dropdown:hover .dropdown-content {
             display: block;
-         }
-
-         &.dropdown::before {
-            content: "";
-            display: inline-block;
-            background-image: url(/first-semester/homework/assets/caret-down-fill.svg);
-            background-repeat: no-repeat;
-            width: 20px;
-            height: 20px;
-            background-position: center;
-            position: absolute;
-            left: -25px;
-            top: 50%;
-            transform: translateY(-50%);
          }
       }
    }
