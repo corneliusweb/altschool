@@ -9,7 +9,7 @@
    src: url(./assets/fonts/gilroy-bold.woff2),
       url(./assets/fonts/gilroy-bold.woff);
    font-weight: normal;
-   font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
@@ -17,13 +17,14 @@
    src: url(./assets/fonts/gilroy-medium.woff2),
       url(./assets/fonts/gilroy-medium.woff);
    font-weight: normal;
-   font-style: normal;
+   font-display: swap;
 }
 
 @font-face {
    font-family: "gilroy semibold";
    src: url(./assets/fonts/gilroy-semibold.woff2),
       url(./assets/fonts/gilroy-semibold.woff);
+   font-display: swap;
 }
 
 :root {
@@ -168,7 +169,7 @@ section.hero {
                   position: absolute;
                   left: 50%;
                   top: 105%;
-                  transform: translate(-50%,-50%);
+                  transform: translate(-50%, -50%);
                }
             }
          }
