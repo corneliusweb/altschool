@@ -202,7 +202,7 @@ section.hero {
          }
       }
 
-      & .diagrams {
+      & #analytics {
          width: 100%;
 
          & div.hero-vector-box {
@@ -250,7 +250,7 @@ section.hero {
       }
    }
 
-   & section#why-scissors {
+   & section#features {
       display: flex;
       width: 1202.1px;
       height: 504px;
@@ -549,7 +549,7 @@ section#trim {
    }
 }
 
-section#faq {
+section#faqs {
    width: 792px;
    margin: auto;
 
