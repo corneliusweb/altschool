@@ -70,7 +70,7 @@ header {
 			font-size: 32px;
 			font-weight: 500;
 			margin-bottom: 5px;
-         line-height: 100%;
+			line-height: 100%;
 		}
 
 		p {
@@ -98,9 +98,9 @@ header {
 				border: none;
 				color: var(--faded-black);
 
-            &:hover {
-               color: var(--text-color);
-            }
+				&:hover {
+					color: var(--text-color);
+				}
 			}
 		}
 
@@ -126,7 +126,7 @@ main {
 	gap: 20px;
 	width: 100%;
 	padding: 0 var(--main-content-padding);
-   padding-bottom: 20px;
+	padding-bottom: 20px;
 
 	.card {
 		max-width: 413px;
@@ -163,10 +163,60 @@ main {
 }
 
 footer {
-   text-align: center;
-   padding: 30px 0;
-   color: var(--faded-black);
-   line-height: 100%;
-   margin: 0 var(--main-content-padding);
-   border-top: 1px solid #21212166;
+	text-align: center;
+	padding: 30px 0;
+	color: var(--faded-black);
+	line-height: 100%;
+	margin: 0 var(--main-content-padding);
+	border-top: 1px solid #21212166;
+}
+
+@media screen and (max-width: 380px) {
+	header .profile {
+		flex-direction: column;
+		height: auto;
+		margin: 20px 15px;
+		align-items: center;
+      border-bottom: unset;
+
+      
+		.profile-main-content {
+         flex-direction: column;
+         gap: unset;
+
+         .text-info {
+            text-align: center;
+            margin-top: 15px;
+            
+            p {
+               font-size: 17px;
+            }
+
+            button {
+               position: unset;
+               width: 80%;
+               margin: 35px 0 25px;
+               font-size: 17px;
+               font-weight: 500;
+            }
+         }
+         
+         .avatar {
+            margin: auto;
+            width: 80px;
+            height: 80px;
+   
+            img {
+               border-radius: 8px;
+            }
+         }
+
+		}
+
+      & > button {
+         width: 100%;
+         font-weight: 500;
+         font-size: 17px;
+      }
+	}
 }
