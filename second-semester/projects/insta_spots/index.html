@@ -23,13 +23,13 @@
                      <h1>Bessie Coleman</h1>
                      <p>Civil Avatar</p>
                   </div>
-                  <button> <i class="fa-solid fa-pen"></i> Edit Profile</button>
+                  <button id="editProfileBtn"> <i class="fa-solid fa-pen"></i> Edit Profile</button>
                </div>
             </div>
-            <button><i class="fa-solid fa-plus"></i> &nbsp; New Post</button>
+            <button id="newPostBtn"><i class="fa-solid fa-plus"></i> &nbsp; New Post</button>
          </div>
       </header>
-      <main>
+      <main id="cardsContainer">
          <div class="card">
             <a href="#fake">
                <img src="./assets/images/val-thorens.png" alt="val Thorens">
@@ -88,6 +88,29 @@
       <footer>
          <p>2025 &copy; Spots</p>
       </footer>
+
+      <div class="modal" id="modal">
+         <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <h2>Create New Post</h2>
+            <input type="text" id="captionInput" placeholder="Write a caption..." />
+            <input type="file" id="imageInput" accept="image/*" />
+            <img class="preview" id="imagePreview" style="display: none;" />
+            <button id="addPostBtn">Add Post</button>
+         </div>
+      </div>
+      <!-- Modal for editing profile -->
+      <div class="modal" id="editProfileModal">
+         <div class="modal-content">
+            <button class="close-btn" id="closeEditProfile">X</button>
+            <h2>Edit Profile</h2>
+            <input type="text" id="profileNameInput" placeholder="Enter your name">
+            <input type="text" id="profileBioInput" placeholder="Enter your bio">
+            <input type="file" id="profileImageInput">
+            <button id="saveProfileBtn">Save</button>
+         </div>
+      </div>
+ 
    </div>
    <script src="app.js"></script>
 </body>
