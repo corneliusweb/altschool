@@ -148,6 +148,10 @@ main {
 				line-height: 120%;
 				color: var(--faded-black);
 				text-decoration: none;
+
+            &:hover {
+               text-decoration: underline;
+            }
 			}
 
 			.fa-heart {
@@ -177,7 +181,7 @@ footer {
 		height: auto;
 		margin: 20px 15px;
 		align-items: center;
-      border-bottom: unset;
+      /* border-bottom: unset; */
 
       
 		.profile-main-content {
@@ -219,4 +223,22 @@ footer {
          font-size: 17px;
       }
 	}
+
+   main {
+      grid-template: 1fr / 1fr;
+      padding: 0 15px;
+
+      .card img {
+         border-radius: 8px;
+         margin-top: 5px;
+      }
+      div .card p a {
+         font-weight: 600;
+      }
+   }
+
+   footer {
+      border-top: unset;
+      padding: 50px 0;
+   }
 }
