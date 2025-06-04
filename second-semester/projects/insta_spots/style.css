@@ -70,6 +70,7 @@ header {
 			font-size: 32px;
 			font-weight: 500;
 			margin-bottom: 5px;
+         line-height: 100%;
 		}
 
 		p {
@@ -121,10 +122,11 @@ header {
 
 main {
 	display: grid;
-	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 	gap: 20px;
 	width: 100%;
 	padding: 0 var(--main-content-padding);
+   padding-bottom: 20px;
 
 	.card {
 		max-width: 413px;
@@ -158,4 +160,13 @@ main {
 			}
 		}
 	}
+}
+
+footer {
+   text-align: center;
+   padding: 30px 0;
+   color: var(--faded-black);
+   line-height: 100%;
+   margin: 0 var(--main-content-padding);
+   border-top: 1px solid #21212166;
 }
