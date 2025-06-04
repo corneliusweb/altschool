@@ -37,8 +37,16 @@
 body {
 	font-family: var(--poppins-regular);
 	background-color: var(--background-color);
+	font-size: 1em;
+
+	button {
+		cursor: pointer;
+	}
+}
+
+.page-wrapper {
 	max-width: 1440px;
-   font-size: 1em;
+	margin: auto;
 }
 
 header {
@@ -52,27 +60,28 @@ header {
 		display: flex;
 		justify-content: space-between;
 		position: relative;
-      height: 210px;
-      padding: 0 var(--main-content-padding) 20px;
-      border-bottom: 1px solid #21212166;
-      margin-top: 30px;
-      
-      h1 {
-         font-size: 32px;
-         font-weight: 500;
-         margin-bottom: 5px;
-      }
+		height: 210px;
+		margin: 0 var(--main-content-padding) 20px;
+		padding-bottom: 20px;
+		margin-top: 30px;
+		border-bottom: 1px solid #21212166;
 
-      p {
-         color: var(--faded-black);
-      }
+		h1 {
+			font-size: 32px;
+			font-weight: 500;
+			margin-bottom: 5px;
+		}
+
+		p {
+			color: var(--faded-black);
+		}
 
 		.avatar {
 			width: 190px;
-         height: 190px;
+			height: 190px;
 
 			img {
-            width: 100%;
+				width: 100%;
 				aspect-ratio: 1/1;
 			}
 		}
@@ -84,26 +93,69 @@ header {
 			.text-info button {
 				position: absolute;
 				bottom: 20px;
-            background: none;
-            border: none;
-            color: var(--faded-black);
-            
+				background: none;
+				border: none;
+				color: var(--faded-black);
+
+            &:hover {
+               color: var(--text-color);
+            }
 			}
 		}
 
-      & > button {
-         background: var(--text-color);
-         border: none;
-         color: #FCF5E5;
-         width: 149px;
-         height: 52px;
-         align-self: flex-end;
-         border-radius: 8px;
-         cursor: pointer;
+		& > button {
+			background: var(--text-color);
+			border: none;
+			color: #fcf5e5;
+			width: 149px;
+			height: 52px;
+			align-self: flex-end;
+			border-radius: 8px;
 
-         &:hover {
-            background-color: #212121CC;
-         }
-      }
+			&:hover {
+				background-color: #212121cc;
+			}
+		}
+	}
+}
+
+main {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+	gap: 20px;
+	width: 100%;
+	padding: 0 var(--main-content-padding);
+
+	.card {
+		max-width: 413px;
+
+		img {
+			width: 100%;
+			aspect-ratio: 1/1;
+		}
+
+		div {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 5px;
+
+			p a {
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 120%;
+				color: var(--faded-black);
+				text-decoration: none;
+			}
+
+			.fa-heart {
+				opacity: 0.4;
+				cursor: pointer;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
 	}
 }
