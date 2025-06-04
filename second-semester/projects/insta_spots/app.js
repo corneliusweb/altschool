@@ -58,3 +58,54 @@ function resetForm() {
 	imagePreview.src = '';
 	imagePreview.style.display = 'none';
 }
+
+// Profile modal elements
+const editProfileBtn = document.getElementById('editProfileBtn');
+const editProfileModal = document.getElementById('editProfileModal');
+const closeEditProfile = document.getElementById('closeEditProfile');
+const profileNameInput = document.getElementById('profileNameInput');
+const profileBioInput = document.getElementById('profileBioInput');
+const profileImageInput = document.getElementById('profileImageInput');
+const saveProfileBtn = document.getElementById('saveProfileBtn');
+
+const profileName = document.querySelector('.profile-heading h1');
+const profileBio = document.querySelector('.profile-heading p');
+const profileImage = document.querySelector('.avatar img');
+
+editProfileBtn.addEventListener('click', () => {
+	editProfileModal.style.display = 'flex';
+});
+
+closeEditProfile.addEventListener('click', () => {
+	editProfileModal.style.display = 'none';
+});
+
+saveProfileBtn.addEventListener('click', () => {
+	const newName = profileNameInput.value;
+	const newBio = profileBioInput.value;
+	const file = profileImageInput.files[0];
+
+	if (newName) {
+		profileName.textContent = newName;
+   }
+   if (newBio) {
+		profileBio.textContent = newBio;
+	}
+
+	if (file) {
+		const reader = new FileReader();
+		reader.onload = function (e) {
+			profileImage.src = e.target.result;
+		};
+		reader.readAsDataURL(file);
+	}
+
+	editProfileModal.style.display = 'none';
+	resetEditModal();
+});
+
+function resetEditModal() {
+	profileNameInput.value = '';
+	profileBioInput.value = '';
+	profileImageInput.value = '';
+}
