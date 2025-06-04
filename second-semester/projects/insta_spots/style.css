@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'poppins regular';
+	src: url(./assets/fonts/poppins-regular.woff2),
+		url(./assets/fonts/poppins-regular.woff);
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'poppins bold';
+	src: url(./assets/fonts/poppins-bold.woff2),
+		url(./assets/fonts/poppins-bold.woff);
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root {
+   --poppins-regular: 'poppins regular', sans-serif;
+   --poppins-bold: 'poppins bold', sans-serif;
+
+   --background-color: #FCF5E5;
+   --logo-background: #FFFFFFCC;
+   --text-color: #212121;
+   --faded-black: #212121B2;
+
+   --main-content-padding: 80px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
