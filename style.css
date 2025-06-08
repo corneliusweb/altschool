@@ -46,7 +46,7 @@ body {
    }
 
    & p {
-      margin-bottom: 30px;
+      margin-top: 50px;
 
       &::after {
          content: ":";
@@ -54,9 +54,13 @@ body {
    }
 
    & ul {
-      display: flex;
-      justify-content: space-between;
-      list-style-type: none;
+      
+      .nav-list {
+         display: flex;
+         justify-content: space-between;
+         list-style-type: none;
+         margin-top: 20px;
+      }
 
       & li {
          & a {
